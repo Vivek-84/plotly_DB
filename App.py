@@ -11,7 +11,7 @@ logging.basicConfig(filename='app.log', level=logging.ERROR, format='%(asctime)s
 
 # Read data from CSV
 try:
-    df = pd.read_csv('C://Users//vivek//Downloads//data12a.csv')
+    df = pd.read_csv('https://raw.githubusercontent.com/Vivek-84/dumpxl/main/data12a.csv')
 except FileNotFoundError as e:
     logging.error(f"error connecting to file extraction from web: {e}")
     df = None
